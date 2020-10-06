@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: pet-clinic
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: viraJ
+Implementation-Vendor-Id: dev.viraj
+Build-Jdk: 1.8.0_251
+Implementation-URL: https://spring.io/projects/spring-boot/pet-clinic
+Created-By: Maven Integration for Eclipse
+
