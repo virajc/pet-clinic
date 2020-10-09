@@ -1,6 +1,10 @@
 package dev.viraj.petclinic.model;
 
-public class Person {
+public class Person extends BaseEntity{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -7904351322282402857L;
 	private String firstName;
 	private String lastName;
 
