@@ -2,10 +2,12 @@ package dev.viraj.petclinic.services.map;
 
 import java.util.Set;
 
-import dev.viraj.petclinic.model.Vet;
-import dev.viraj.petclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
-public class VetServiceMap extends AbstactMapService<Vet, Long> implements CrudService<Vet, Long> {
+import dev.viraj.petclinic.model.Vet;
+import dev.viraj.petclinic.services.VetService;
+@Service
+public class VetServiceMap extends AbstactMapService<Vet, Long> implements VetService {
 
 	@Override
 	public Vet save(Vet object) {

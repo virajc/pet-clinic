@@ -2,10 +2,12 @@ package dev.viraj.petclinic.services.map;
 
 import java.util.Set;
 
-import dev.viraj.petclinic.model.Owner;
-import dev.viraj.petclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
-public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements CrudService<Owner, Long> {
+import dev.viraj.petclinic.model.Owner;
+import dev.viraj.petclinic.services.OwnerService;
+@Service
+public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements OwnerService{
 
 	@Override
 	public Set<Owner> findAll() {
@@ -30,6 +32,12 @@ public class OwnerServiceMap extends AbstactMapService<Owner, Long> implements C
 	@Override
 	public void deleteById(Long id) {
 		super.deleteById(id);
+	}
+
+	@Override
+	public Owner findByLastName(String lastName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
