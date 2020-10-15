@@ -11,7 +11,7 @@ public class PetServiceMap extends AbstactMapService<Pet, Long> implements CrudS
 
 	@Override
 	public Pet save(Pet object) {
-		return super.save(object.getId(), object);
+		return super.save( object);
 	}
 
 	@Override
