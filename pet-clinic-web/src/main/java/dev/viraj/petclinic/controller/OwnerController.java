@@ -18,7 +18,6 @@ public class OwnerController {
 
 	@RequestMapping({ "", "/", "/index", "/index.html" })
 	public String listVets(Model model) {
-		ownerService.findAll().stream().forEach((owner)->{System.out.println(owner.toString());});
 		model.addAttribute("owners", ownerService.findAll());
 		return "owners/index";
 	}
